@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.2/engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+        <element type="textarea" scope="shop">
+            <name>fontNames</name>
+            <label lang="de">Verfügbare Schriftarten in TinyMCE</label>
+            <label lang="en">Available font in TinyMCE</label>
+            <value>Andale Mono=andale mono,times;Arial Black=arial black,avant garde;Courier New=courier new,courier;Helvetica=helvetica;Tahoma=tahoma,arial,helvetica,sans-serif;Times New Roman=times new roman,times;Trebuchet MS=trebuchet ms,geneva;Verdana=verdana,geneva;</value>
+            <description lang="de">Bitte füge deine eigenen Schriftarten am Ende der Zeichenkette hinzu. Verwenden dazu folgendes Format: [name]=[font-family-name];</description>
+            <description lang="en">Please add the name of your custom font at the end of the string. Use the following format: [name]=[font-family-name];</description>
+        </element>
+
+        <element type="textarea" scope="shop">
+            <name>urls</name>
+            <label lang="de">Font URLs</label>
+            <label lang="en">Your font urls</label>
+            <value></value>
+            <description lang="de">Bitte füge hier die Links zu den eigenen Schriftarten ein. Falls mehrere Schriftarten eingebunden werden sollen, müssen diese Zeile für Zeile eingefügt werden</description>
+            <description lang="en">Please insert the link to your custom font in there. If you want to insert multiple fonts you can add them line by line.</description>
+        </element>
+    </elements>
+</config>
