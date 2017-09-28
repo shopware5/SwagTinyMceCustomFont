@@ -7,7 +7,7 @@ Ext.define('Shopware.form.field.TinyMCEUnfiltered', {
 
         me.editor = Ext.apply(me.editor, {
             theme_advanced_fonts: "{$tinyMceCustomFontConfig.fontNames}",
-            content_css: '{url controller="tiny_mce_custom_font"}?_dc=' + new Date().getTime(),
+            content_css: '{url controller="tiny_mce_custom_font" forceSecure}?_dc=' + new Date().getTime(),
         });
 
         me.callOverridden();
