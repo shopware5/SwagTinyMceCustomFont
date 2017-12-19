@@ -1,5 +1,8 @@
 <?php
-class Shopware_Controllers_Backend_TinyMceCustomFont extends \Enlight_Controller_Action
+
+use Shopware\Components\CSRFWhitelistAware;
+
+class Shopware_Controllers_Backend_TinyMceCustomFont extends \Enlight_Controller_Action implements CSRFWhitelistAware
 {
     public function indexAction()
     {
@@ -18,5 +21,15 @@ class Shopware_Controllers_Backend_TinyMceCustomFont extends \Enlight_Controller
                 echo "@import url('" . $files . "');\n";
             }
         }
+    }
+
+    /**
+     * Returns a list with actions which should not be validated for CSRF protection
+     *
+     * @return string[]
+     */
+    public function getWhitelistedCSRFActions()
+    {
+        return ['index'];
     }
 }
