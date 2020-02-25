@@ -7,5 +7,5 @@
 {block name="backend/base/header/css"}
     {$smarty.block.parent}
 
-    <link rel="stylesheet" href="{url controller="tiny_mce_custom_font"}?{Shopware::REVISION}" />
+    <link rel="stylesheet" href="{url controller="tiny_mce_custom_font"}" />
 {/block}
