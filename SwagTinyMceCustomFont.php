@@ -25,6 +25,7 @@ class SwagTinyMceCustomFont extends \Shopware\Components\Plugin
         $config = $this->container->get('shopware.plugin.config_reader')->getByPluginName($this->getName());
 
         $view->assign('tinyMceCustomFontConfig', $config);
+        $view->assign('tinyMceCacheBuster', md5(json_encode($config)));
         $view->addTemplateDir($this->getPath() . '/Resources/Views');
         $view->extendsTemplate('backend/swag_tiny_mce_custom_font/include.tpl');
     }
